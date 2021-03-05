@@ -10,34 +10,39 @@ arr.forEach(callback(currentValue[, index[, array]]) {
 Parameters
 // callback
 // Function to execute on each element. It accepts between one and three arguments:
-currentValue
-The current element being processed in the array.
-index Optional
-The index of currentValue in the array.
-array Optional
-The array forEach() was called upon.
-thisArg Optional
-Value to use as this when executing callback.
-Return value
-undefined.
 
-Description
-forEach() calls a provided callback function once for each element in an array in ascending order. It is not invoked for index properties that have been deleted or are uninitialized. (For sparse arrays, see example below.)
+// currentValue
+// The current element being processed in the array.
+// index Optional
 
-callback is invoked with three arguments:
+// The index of currentValue in the array.
+// array Optional
 
-the value of the element
-the index of the element
-the Array object being traversed
-If a thisArg parameter is provided to forEach(), it will be used as callback's this value. The thisArg value ultimately observable by callback is determined according to the usual rules for determining the this seen by a function.
+// The array forEach() was called upon.
+// thisArg Optional
 
-The range of elements processed by forEach() is set before the first invocation of callback. Elements which are appended to the array after the call to forEach() begins will not be visited by callback. If existing elements of the array are changed or deleted, their value as passed to callback will be the value at the time forEach() visits them; elements that are deleted before being visited are not visited. If elements that are already visited are removed (e.g. using shift()) during the iteration, later elements will be skipped. (See this example, below.)
+// Value to use as this when executing callback.
 
-forEach() executes the callback function once for each array element; unlike map() or reduce() it always returns the value undefined and is not chainable. The typical use case is to execute side effects at the end of a chain.
+// Return value
+// undefined.
 
-forEach() does not mutate the array on which it is called. (However, callback may do so)
+// Description
+// forEach() calls a provided callback function once for each element in an array in ascending order. It is not invoked for index properties that have been deleted or are uninitialized. (For sparse arrays, see example below.)
 
-There is no way to stop or break a forEach() loop other than by throwing an exception. If you need such behavior, the forEach() method is the wrong tool.
+// callback is invoked with three arguments:
+
+// the value of the element
+// the index of the element
+// the Array object being traversed
+// If a thisArg parameter is provided to forEach(), it will be used as callback's this value. The thisArg value ultimately observable by callback is determined according to the usual rules for determining the this seen by a function.
+
+// The range of elements processed by forEach() is set before the first invocation of callback. Elements which are appended to the array after the call to forEach() begins will not be visited by callback. If existing elements of the array are changed or deleted, their value as passed to callback will be the value at the time forEach() visits them; elements that are deleted before being visited are not visited. If elements that are already visited are removed (e.g. using shift()) during the iteration, later elements will be skipped. (See this example, below.)
+
+// forEach() executes the callback function once for each array element; unlike map() or reduce() it always returns the value undefined and is not chainable. The typical use case is to execute side effects at the end of a chain.
+
+// forEach() does not mutate the array on which it is called. (However, callback may do so)
+
+// There is no way to stop or break a forEach() loop other than by throwing an exception. If you need such behavior, the forEach() method is the wrong tool.
 
 Early termination may be accomplished with:
 
@@ -47,10 +52,13 @@ Array.prototype.every()
 Array.prototype.some()
 Array.prototype.find()
 Array.prototype.findIndex()
-Array methods: every(), some(), find(), and findIndex() test the array elements with a predicate returning a truthy value to determine if further iteration is required.
 
-forEach expects a synchronous function forEach does not wait for promises. Kindly make sure you are aware of the implications while using promises(or async functions) as forEach callback.
-Example Code
+// Array methods: every(), some(), find(), and findIndex() test the array elements with a predicate returning a truthy value to determine if further iteration is required.
+
+// forEach expects a synchronous function forEach does not wait for promises. Kindly make sure you are aware of the implications while using promises(or async functions) as forEach callback.
+
+// Example Code
+
 let ratings = [5, 4, 5];
 let sum = 0;
 
@@ -62,14 +70,13 @@ let sumFunction = async function (a, b)
 ratings.forEach(async function(rating) {
   sum = await sumFunction(sum, rating)
 })
-
 console.log(sum)
-// Naively expected output: 14
-// Actual output: 0
-Polyfill
-forEach() was added to the ECMA-262 standard in the 5th edition, and it may not be present in all implementations of the standard. You can work around this by inserting the following code at the beginning of your scripts, allowing use of forEach() in implementations which do not natively support it.
+ Naively expected output: 14
+ Actual output: 0
+// Polyfill
+// forEach() was added to the ECMA-262 standard in the 5th edition, and it may not be present in all implementations of the standard. You can work around this by inserting the following code at the beginning of your scripts, allowing use of forEach() in implementations which do not natively support it.
 
-This algorithm is exactly the one specified in ECMA-262, 5th edition, assuming Object and TypeError have their original values and that fun.call evaluates to the original value of Function.prototype.call().
+// This algorithm is exactly the one specified in ECMA-262, 5th edition, assuming Object and TypeError have their original values and that fun.call evaluates to the original value of Function.prototype.call().
 
 // Production steps of ECMA-262, Edition 5, 15.4.4.18
 // Reference: https://es5.github.io/#x15.4.4.18

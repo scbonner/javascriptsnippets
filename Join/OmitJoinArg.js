@@ -6,3 +6,6 @@
 ['Amir', 'Betty'].join();
 Result: 
 'Amir,Betty' 
+
+
+// join's argument is the string to put between each array element. It can be any string.

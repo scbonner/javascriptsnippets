@@ -21,12 +21,7 @@ Result:
 [10, 20, 30, 40, 50].slice(-3, -1);
 Result: 
 [30, 40] 
-Review progress as of today :
-Learn
-1 day
-4 days
-16 days
-64 days
+
 
 // This code example came from the Slice with negative arguments lesson.
 
