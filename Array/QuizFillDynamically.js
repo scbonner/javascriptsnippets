@@ -3,6 +3,13 @@
 // Write a function fillDynamically(value, length). It should construct a new array of length filled with value
 
 
+ 
+const size = 1 + 2;
+new Array(size).fill('d');
+Result: 
+['d', 'd', 'd'] 
+
+
 fillDynamically('d', 3);
 Expected: ['d', 'd', 'd'] OK!
 
