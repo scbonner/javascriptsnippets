@@ -32,3 +32,9 @@ function none(array, callback) {
   return !array.some(callback);
 }
 none(['a', 'bc', 'def'], string => string.length === 0);
+
+//  OR Author's Answer
+
+function none(arr, callback) {
+    return !arr.some(callback);
+  }
