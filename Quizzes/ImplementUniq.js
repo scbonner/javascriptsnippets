@@ -1,15 +1,15 @@
 
-"Implement uniq"
-Let's write some code. You can solve this problem using only what you've learned in this course so far. If you need a reminder, there's a cheat sheet for all of the lessons that you've finished at the bottom-right of the page.
+// "Implement uniq"
+// Let's write some code. You can solve this problem using only what you've learned in this course so far. If you need a reminder, there's a cheat sheet for all of the lessons that you've finished at the bottom-right of the page.
 
-Each test below shows some code and its result. Your goal is to get each test's actual result to match the expected result.
+// Each test below shows some code and its result. Your goal is to get each test's actual result to match the expected result.
 
-Edit the code below until all tests pass. If you get stuck, try getting each test to pass individually.
+// Edit the code below until all tests pass. If you get stuck, try getting each test to pass individually.
 
-This quiz includes topics from these lessons: "For each", "Includes", "Stack". If you find this quiz difficult, revisiting those lessons may help!
-Write a function uniq(arr). It should return a new array without any duplicate values. It should not change the original array.
+// This quiz includes topics from these lessons: "For each", "Includes", "Stack". If you find this quiz difficult, revisiting those lessons may help!
+// Write a function uniq(arr). It should return a new array without any duplicate values. It should not change the original array.
 
->
+
 uniq([1, 2, 3]);
 Expected: [1, 2, 3] OK!
 >

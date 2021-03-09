@@ -1,7 +1,7 @@
-This quiz includes topics from this lesson: "Map". If you find this quiz difficult, revisiting that lesson may help!
-Use map to write a function that squares every number in a list.
+// This quiz includes topics from this lesson: "Map". If you find this quiz difficult, revisiting that lesson may help!
+// Use map to write a function that squares every number in a list.
 
->
+
 square([0, 0, 0]);
 Expected: [0, 0, 0] OK!
 >
