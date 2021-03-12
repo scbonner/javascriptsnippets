@@ -4,20 +4,24 @@
 
 square([0, 0, 0]);
 Expected: [0, 0, 0] OK!
->
+
+
 square([1, 2, 3]);
 Expected: [1, 4, 9] OK!
->
+
+
 square([8, 12, 4]);
 Expected: [64, 144, 16] OK!
->
+
+
 square([]);
 Expected: [] OK!
->
+
+
 // You must use map.
 square.toString().includes('map');
 Expected: true OK!
-5 tests, 0 failures
+
 
 
 const square = (nums) => {

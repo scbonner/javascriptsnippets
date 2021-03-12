@@ -152,7 +152,7 @@ console.log("numCallbackRuns: ", numCallbackRuns)
 // 7
 // numCallbackRuns: 3
 // comment: as you can see the missing value between 3 and 7 didn't invoke callback function.
-Converting a for loop to forEach
+//Converting a for loop to forEach
 const items = ['item1', 'item2', 'item3']
 const copyItems = []
 
@@ -165,12 +165,12 @@ for (let i = 0; i < items.length; i++) {
 items.forEach(function(item){
   copyItems.push(item)
 })
-Printing the contents of an array
-Note: In order to display the content of an array in the console, you can use console.table(), which prints a formatted version of the array.
+// Printing the contents of an array
+// Note: In order to display the content of an array in the console, you can use console.table(), which prints a formatted version of the array.
 
-The following example illustrates an alternative approach, using forEach().
+// The following example illustrates an alternative approach, using forEach().
 
-The following code logs a line for each element in an array:
+// The following code logs a line for each element in an array:
 
 function logArrayElements(element, index, array) {
   console.log('a[' + index + '] = ' + element)
@@ -183,8 +183,8 @@ function logArrayElements(element, index, array) {
 // a[0] = 2
 // a[1] = 5
 // a[3] = 9
-Using thisArg
-The following (contrived) example updates an object's properties from each entry in the array:
+//Using thisArg
+//The following (contrived) example updates an object's properties from each entry in the array:
 
 function Counter() {
   this.sum = 0
@@ -203,14 +203,14 @@ obj.count
 // 3
 obj.sum
 // 16
-Since the thisArg parameter (this) is provided to forEach(), it is passed to callback each time it's invoked. The callback uses it as its this value.
+// Since the thisArg parameter (this) is provided to forEach(), it is passed to callback each time it's invoked. The callback uses it as its this value.
 
-Note: If passing the callback function used an arrow function expression, the thisArg parameter could be omitted, since all arrow functions lexically bind the this value.
+// Note: If passing the callback function used an arrow function expression, the thisArg parameter could be omitted, since all arrow functions lexically bind the this value.
 
-An object copy function
-The following code creates a copy of a given object.
+// An object copy function
+// The following code creates a copy of a given object.
 
-There are different ways to create a copy of an object. The following is just one way and is presented to explain how Array.prototype.forEach() works by using ECMAScript 5 Object.* meta property functions.
+// There are different ways to create a copy of an object. The following is just one way and is presented to explain how Array.prototype.forEach() works by using ECMAScript 5 Object.* meta property functions.
 
 function copy(obj) {
   const copy = Object.create(Object.getPrototypeOf(obj))
