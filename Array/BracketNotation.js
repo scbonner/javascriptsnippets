@@ -13,8 +13,9 @@ let ourVariable = ourArray[0];
 
 // In addition to accessing the value associated with an index, you can also set an index to a value using the same notation:
 
-// ourArray[1] = "not b anymore";
+ourArray[1] = "not b anymore";
 // Using bracket notation, we have now reset the item at index 1 from the string b, to not b anymore. Now ourArray is ["a", "not b anymore", "c"].
 
 // In order to complete this challenge, set the 2nd position (index 1) of myArray to anything you want, besides the letter b.
 
+ourArray[1] = 'hopes this works'

@@ -16,7 +16,7 @@ arr.length;
 Result: 
 3 
 
-This code example came from the Arrays are objects lesson.
+// This code example came from the Arrays are objects lesson.
 
 
 const nums = [1, 2, 3];
@@ -25,14 +25,14 @@ nums[0];
 Result: 
 1 
 
-This code example came from the Map lesson.
+// This code example came from the Map lesson.
  
 typeof [];
 Result: 
 'object' 
 
 
-This code example came from the Arrays are objects lesson.
+// This code example came from the Arrays are objects lesson.
 
 ['a', 'b', 'c'].findIndex(element => element === 'd');
 Result: 
@@ -40,7 +40,7 @@ Result:
 
 
 //This code example came from the Find index lesson.
-> 
+
 [1, 2, 3].some(num => num === 2);
 Result: 
 true 

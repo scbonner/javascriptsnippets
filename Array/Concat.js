@@ -7,6 +7,14 @@ var hege = ["Cecilie", "Lone"];
 var stale = ["Emil", "Tobias", "Linus"];
 var children = hege.concat(stale);
 
+let apples = ['granny', 'rome', 'fuji'];
+let oranges = ['navel', 'cara cara', 'tangelos'];
+let fruit = apples.concat(oranges);
+
+trees = ['maple', 'cedar', 'willow'];
+plants = ['catus', 'snake', 'fern', 'holly'];
+let landscapePlants = trees.concat(plants);
+
 
 
 // <p>Click the button to join two arrays.</p>
@@ -20,7 +28,7 @@ function myFunction() {
   let hege = ["Cecilie", "Lone"];
   let stale = ["Emil", "Tobias", "Linus"];
   let children = hege.concat(stale); 
-  {/* document.getElementById("demo").innerHTML = children; */}
+  
 }
 console.log(myFunction())
   </script>

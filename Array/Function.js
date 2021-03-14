@@ -7,9 +7,9 @@ numbers.forEach(function(n){
 });
 
 
-Some use cases of looping through an array in the functional programming way in JavaScript:
+// Some use cases of looping through an array in the functional programming way in JavaScript:
 
-1. Just loop through an array
+//1. Just loop through an array
 const myArray = [{x:100}, {x:200}, {x:300}];
 
 myArray.forEach((element, index, array) => {
@@ -17,9 +17,10 @@ myArray.forEach((element, index, array) => {
     console.log(index); // 0, 1, 2
     console.log(array); // same myArray object 3 times
 });
-Note: Array.prototype.forEach() is not a functional way strictly speaking, as the function it takes as the input parameter is not supposed to return a value, which thus cannot be regarded as a pure function.
+// Note: forEach() is not a functional way strictly speaking, as the function it takes as the input parameter is not supposed to return a value, which thus cannot be regarded as a pure function.
 
-2. Check if any of the elements in an array pass a test
+// 2. Check if any of the elements in an array pass a test
+
 const people = [
     {name: 'John', age: 23}, 
     {name: 'Andrew', age: 3}, 
@@ -29,14 +30,18 @@ const people = [
 
 const anyAdult = people.some(person => person.age >= 18);
 console.log(anyAdult); // true
-3. Transform to a new array
+
+//3. Transform to a new array
 const myArray = [{x:100}, {x:200}, {x:300}];
 
 const newArray= myArray.map(element => element.x);
 console.log(newArray); // [100, 200, 300]
-Note: The map() method creates a new array with the results of calling a provided function on every element in the calling array.
 
-4. Sum up a particular property, and calculate its average
+
+// Note: The map() method creates a new array with the results of calling a provided function on every element in the calling array.
+
+//4. Sum up a particular property, and calculate its average
+
 const myArray = [{x:100}, {x:200}, {x:300}];
 
 const sum = myArray.map(element => element.x).reduce((a, b) => a + b, 0);
@@ -44,7 +49,8 @@ console.log(sum); // 600 = 0 + 100 + 200 + 300
 
 const average = sum / myArray.length;
 console.log(average); // 200
-5. Create a new array based on the original but without modifying it
+
+//5. Create a new array based on the original but without modifying it
 const myArray = [{x:100}, {x:200}, {x:300}];
 
 const newArray= myArray.map(element => {
@@ -56,7 +62,19 @@ const newArray= myArray.map(element => {
 
 console.log(myArray); // [100, 200, 300]
 console.log(newArray); // [200, 400, 600]
-6. Count the number of each category
+
+
+const oldArr = [10, 20, 30, 40];
+const newArr = oldArr.map(element => {
+    return {
+        ...element,
+        
+    }
+})
+
+
+
+//6. Count the number of each category
 const people = [
     {name: 'John', group: 'A'}, 
     {name: 'Andrew', group: 'C'}, 

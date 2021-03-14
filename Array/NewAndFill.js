@@ -21,6 +21,18 @@ new Array(size).length;
 Result: 
 3 
 
+const size = 3 + 2;
+new Array(size).length;
+3
+
+const size = 8
+new Array(size).length;
+8
+
+const size = 8 - 3;
+new Array(size).length;
+5
+
 // There's nothing in an array created in this way. If we ask for its elements, we'll get undefined.
 
 
@@ -47,6 +59,12 @@ fillDynamically(2);
 Result: 
 ['d', 'd'] 
 
+function fillDynamically(size) { 
+  return new Array(size).fill('d');
+}
 
+fillDynamically(3);
+Result
+['d', 'd', 'd']
 // The progress bar at the top of this lesson is made of many divs. We know how many code examples exist in the lesson. We create that many divs to make up the progress bar. This is done using the new Array(...).fill(...) method shown here!
 
