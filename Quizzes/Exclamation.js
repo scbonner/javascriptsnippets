@@ -5,19 +5,19 @@
 
 f(['a', 'b', 'c']);
 Expected: ['a!', 'b!', 'c!'] OK!
->
+
 f(['A cat']);
 Expected: ['A cat!'] OK!
->
+
 f(['A cat', 'And a dog']);
 Expected: ['A cat!', 'And a dog!'] OK!
->
+
 f(['']);
 Expected: ['!'] OK!
->
+
 f([]);
 Expected: [] OK!
->
+
 f.toString().includes('map');
 Expected: true OK!
 6 tests, 0 failures
