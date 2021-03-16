@@ -2,9 +2,14 @@
 
 const a = [1, 2];
 a.push(3);
-a;
+a;  //calling or invoking a
 Result: 
 [1, 2, 3] 
+
+const a = [1, 2, 3]
+a.push(4)
+a;
+[1, 2, 3, 4]
 
 // push returns the array's length, including the newly-pushed element.
 
