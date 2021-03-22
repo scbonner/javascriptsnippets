@@ -2,9 +2,19 @@
 
 const a = [1, 2];
 a.push(3);
-a;  //calling or invoking a
+a;  //calling or invoking the variable a
 Result: 
 [1, 2, 3] 
+
+const b = ['a', 'b', 'c']
+b.push('d')
+Result:
+['a', 'b', 'c', 'd']
+
+const abc = [1, 2]
+abc.push(3)
+Result:
+[1, 2, 3]
 
 const a = [1, 2, 3]
 a.push(4)

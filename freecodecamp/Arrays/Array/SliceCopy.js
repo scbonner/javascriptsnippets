@@ -24,3 +24,11 @@ function forecast(arr) {
   
   // Only change code above this line
   console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
+
+  //OR
+
+  function forecast(arr) {
+  
+  let condition = ['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']
+  return arr.slice(2, 4)
+  }

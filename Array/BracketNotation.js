@@ -18,4 +18,5 @@ ourArray[1] = "not b anymore";
 
 // In order to complete this challenge, set the 2nd position (index 1) of myArray to anything you want, besides the letter b.
 
-ourArray[1] = 'hopes this works'
+myArray[1] = 'hopes this works'
+

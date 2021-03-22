@@ -25,11 +25,24 @@
 // //['a', 'b', 2] + [2, 'a', 'b']
 
 
-const foods = ['peas', 'carrots', 'potatoes'];
-const joined = [
-  foods.slice(0, -1).join(', '),
-  ', and ',
-  foods[foods.length - 1],
-].join('');
-joined;
-'[['peas', 'carrots'], and ', 1]]'
+// const foods = ['peas', 'carrots', 'potatoes'];
+// const joined = [
+//   foods.slice(0, -1).join(', '),
+//   ', and ',
+//   foods[foods.length - 1],
+// ].join('');
+// joined;
+// '[['peas', 'carrots'], and ', 1]]'
+
+function at(arr) {
+    arr[1] = 0
+    return null
+}
+
+//adding strings
+let firstName = "Anwar";
+let lastName ="Haq";
+let role = 'developer'
+
+let msg = firstName + ' ' + lastName + ': '+ role;
+

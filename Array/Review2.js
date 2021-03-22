@@ -9,6 +9,11 @@ new Array(size).fill('d');
 Result: 
 ['d', 'd', 'd'] 
 
+const size = 1 + 2
+new Array(size).fill('e');
+Result:
+['e', 'e', 'e']
+
 
 // Your next review of this code example will be in 6 hours. You may want to revisit the New and fill lesson. (Your review progress has already been saved.)
 //  Show Author's Answer

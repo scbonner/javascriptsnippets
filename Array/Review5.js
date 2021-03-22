@@ -8,6 +8,11 @@
 Result: 
 0 
 
+[1, 2, 3, 3, 4].findIndex(num => num === 3);
+
+Result: 
+2
+
 // This code example came from the Find index lesson.
 
 const arr = ['a', 'b', 'c'];
@@ -21,7 +26,7 @@ Result:
 
 const nums = [1, 2, 3];
 nums.map(num => num * 10);
-nums[0];
+nums[0]; //retrieve index 0
 Result: 
 1 
 

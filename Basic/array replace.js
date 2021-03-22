@@ -5,10 +5,6 @@
 // Regular functions: function f() { ... }.
 // Arrow functions: const f = () => { ... }.
 
-
-
-
-
 // We can replace array elements with [] and =.
 
 
@@ -51,6 +47,37 @@ Result:
 
 // Write a function that puts a 0 in element 1 of an array. Make sure that the function returns null. Returning null makes it clear that the function modifies the array.
 
+function at(arr) {
+    arr[1] = 0
+    return null
+}
+
+function abc(arr) {
+    arr[1] = 0
+    return null 
+}
+
+function abc(num) {
+    num[1] = 0
+    return null
+} 
+
+function abc(num) {
+    num[1] = 0
+    return null
+}
+
+function abc(num) {
+    num[1] = 0
+    return null
+}
+
+
+function ff(num) {
+    num[1] 0
+    return null;
+}
+
 function f(nums) {
     nums[1] = 0
     return null
@@ -89,5 +116,9 @@ array;
 
 
 // Write a function isEmpty(arr) that returns true if the array is empty.
+
+function isEmpty(arr) {
+    return true
+}
 
 

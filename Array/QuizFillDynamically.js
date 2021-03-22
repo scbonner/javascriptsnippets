@@ -2,7 +2,9 @@
 // If you find this quiz difficult, revisiting that lesson may help!
 // Write a function fillDynamically(value, length). It should construct a new array of length filled with value
 
-
+functiona fillDynamically(value, length) {
+  return new Array(length).fill(value)
+}
  
 const size = 1 + 2;
 new Array(size).fill('d');

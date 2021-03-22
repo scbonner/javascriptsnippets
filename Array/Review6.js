@@ -40,6 +40,32 @@ names;
 Result: 
 ['Cindy', 'Dalili'] 
 
+const people = [
+  {name: 'Harry'},
+  {name: 'Sally'},
+
+];
+const names = [];
+people.forEach(person => {
+  names.push(person.name);
+});
+names;  //calling or evoking
+Result:
+['Harry', 'Sally']
+
+const people = [
+  {name: 'Willie'},
+  {name: 'Tommy'},
+  {name: 'Harry'}
+];
+const names = [];
+people.forEach(person => {
+  names.push(person.name);
+});
+names;
+['Willie', 'Tommy', 'Harry']
+
+
 
 // This code example came from the For each lesson.
 

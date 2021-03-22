@@ -1,10 +1,18 @@
 // Write a function at(arr, i) that returns the element at 
 // index i. It should return null if given an index not in the array.
 
+function at(arr, i) {
+  return[i];
+}
 
-// function at(arr, i) {
-//     return arr[i].
-// }
+
+function at(arr, i) {
+    return arr[i].
+}
+
+function at(arr, i) {
+  return arr[i];
+}
 
 
 // function at([0, 0, 0], 0);
