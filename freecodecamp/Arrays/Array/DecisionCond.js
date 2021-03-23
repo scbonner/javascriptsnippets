@@ -1,14 +1,14 @@
-Making decisions in your code — conditionals
-Overview: Building blocks
-Next
-In any programming language, the code needs to make decisions and carry out actions accordingly depending on different inputs. For example, in a game, if the player's number of lives is 0, then it's game over. In a weather app, if it is being looked at in the morning, show a sunrise graphic; show stars and a moon if it is nighttime. In this article, we'll explore how so-called conditional statements work in JavaScript.
+// Making decisions in your code — conditionals
+// Overview: Building blocks
+// Next
+// In any programming language, the code needs to make decisions and carry out actions accordingly depending on different inputs. For example, in a game, if the player's number of lives is 0, then it's game over. In a weather app, if it is being looked at in the morning, show a sunrise graphic; show stars and a moon if it is nighttime. In this article, we'll explore how so-called conditional statements work in JavaScript.
 
-Prerequisites:	Basic computer literacy, a basic understanding of HTML and CSS, JavaScript first steps.
-Objective:	To understand how to use conditional structures in JavaScript.
-You can have it on one condition..!
-Human beings (and other animals) make decisions all the time that affect their lives, from small ("should I eat one cookie or two?") to large ("should I stay in my home country and work on my father's farm, or should I move to America and study astrophysics?")
+// Prerequisites:	Basic computer literacy, a basic understanding of HTML and CSS, JavaScript first steps.
+// Objective:	To understand how to use conditional structures in JavaScript.
+// You can have it on one condition..!
+// Human beings (and other animals) make decisions all the time that affect their lives, from small ("should I eat one cookie or two?") to large ("should I stay in my home country and work on my father's farm, or should I move to America and study astrophysics?")
 
-Conditional statements allow us to represent such decision making in JavaScript, from the choice that must be made (for example, "one cookie or two"), to the resulting outcome of those choices (perhaps the outcome of "ate one cookie" might be "still felt hungry", and the outcome of "ate two cookies" might be "felt full, but mom scolded me for eating all the cookies".)
+// Conditional statements allow us to represent such decision making in JavaScript, from the choice that must be made (for example, "one cookie or two"), to the resulting outcome of those choices (perhaps the outcome of "ate one cookie" might be "still felt hungry", and the outcome of "ate two cookies" might be "felt full, but mom scolded me for eating all the cookies".)
 
 
 
@@ -22,17 +22,17 @@ if (condition) {
   code to run if condition is true
 } else {
   run some other code instead
-}
-Here we've got:
+// }
+// Here we've got:
 
-The keyword if followed by some parentheses.
-A condition to test, placed inside the parentheses (typically "is this value bigger than this other value?", or "does this value exist?"). The condition makes use of the comparison operators we discussed in the last module and returns true or false.
-A set of curly braces, inside which we have some code — this can be any code we like, and it only runs if the condition returns true.
-The keyword else.
-Another set of curly braces, inside which we have some more code — this can be any code we like, and it only runs if the condition is not true — or in other words, the condition is false.
-This code is pretty human-readable — it is saying "if the condition returns true, run code A, else run code B"
+// The keyword if followed by some parentheses.
+// A condition to test, placed inside the parentheses (typically "is this value bigger than this other value?", or "does this value exist?"). The condition makes use of the comparison operators we discussed in the last module and returns true or false.
+// A set of curly braces, inside which we have some code — this can be any code we like, and it only runs if the condition returns true.
+// The keyword else.
+// Another set of curly braces, inside which we have some more code — this can be any code we like, and it only runs if the condition is not true — or in other words, the condition is false.
+// This code is pretty human-readable — it is saying "if the condition returns true, run code A, else run code B"
 
-You should note that you don't have to include the else and the second curly brace block — the following is also perfectly legal code:
+// You should note that you don't have to include the else and the second curly brace block — the following is also perfectly legal code:
 
 if (condition) {
   code to run if condition is true
