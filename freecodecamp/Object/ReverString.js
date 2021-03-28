@@ -33,7 +33,7 @@ function reverseString(str) {
 
 // Finally, you return the final value of reversedStr.
 
-Solution 2 (Click to Show/Hide)
+// Solution 2 (Click to Show/Hide)
 function reverseString(str) {
   return str
     .split("")
