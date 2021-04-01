@@ -1,20 +1,20 @@
 
-Problem Explanation
-You will get an array that contains sub arrays of numbers and you need to return an array with the largest number from each of the sub arrays.
+// Problem Explanation
+// You will get an array that contains sub arrays of numbers and you need to return an array with the largest number from each of the sub arrays.
 
-Hints
-Hint 1
-You will get an array that contains sub arrays of numbers and you need to return an array with the largest number from each of the sub arrays. You will need to keep track of the array with the answer and the largest number of each sub-array.
+// Hints
+// Hint 1
+// You will get an array that contains sub arrays of numbers and you need to return an array with the largest number from each of the sub arrays. You will need to keep track of the array with the answer and the largest number of each sub-array.
 
-Hint 2
-You can work with multidimensional arrays by Array[Index][SubIndex]
+// Hint 2
+// You can work with multidimensional arrays by Array[Index][SubIndex]
 
-Hint 3
-Pay close attention to the timing of the storing of variables when working with loops
+// Hint 3
+// Pay close attention to the timing of the storing of variables when working with loops
 
-Solutions
-Solution 1 (Click to Show/Hide)
-(Procedural approach)
+// Solutions
+// Solution 1 (Click to Show/Hide)
+// (Procedural approach)
 
 function largestOfFour(arr) {
   let results = [];

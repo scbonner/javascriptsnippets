@@ -1,63 +1,67 @@
 
-Array
-The JavaScript Array class is a global object that is used in the construction of arrays; which are high-level, list-like objects.
+// Array
+// The JavaScript Array class is a global object that is used in the construction of arrays; which are high-level, list-like objects.
 
-Description
-Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript array nor the types of its elements are fixed. Since an array's length can change at any time, and data can be stored at non-contiguous locations in the array, JavaScript arrays are not guaranteed to be dense; this depends on how the programmer chooses to use them. In general, these are convenient characteristics; but if these features are not desirable for your particular use, you might consider using typed arrays.
+// Description
+// Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript array nor the types of its elements are fixed. Since an array's length can change at any time, and data can be stored at non-contiguous locations in the array, JavaScript arrays are not guaranteed to be dense; this depends on how the programmer chooses to use them. In general, these are convenient characteristics; but if these features are not desirable for your particular use, you might consider using typed arrays.
 
-Arrays cannot use strings as element indexes (as in an associative array) but must use integers. Setting or accessing via non-integers using bracket notation (or dot notation) will not set or retrieve an element from the array list itself, but will set or access a variable associated with that array's object property collection. The array's object properties and list of array elements are separate, and the array's traversal and mutation operations cannot be applied to these named properties.
+// Arrays cannot use strings as element indexes (as in an associative array) but must use integers. Setting or accessing via non-integers using bracket notation (or dot notation) will not set or retrieve an element from the array list itself, but will set or access a variable associated with that array's object property collection. The array's object properties and list of array elements are separate, and the array's traversal and mutation operations cannot be applied to these named properties.
 
-Common operations
-Create an Array
+// Common operations
+// Create an Array
 
 let fruits = ['Apple', 'Banana']
 
 console.log(fruits.length)
 // 2
-Access an Array item using the index position
+//Access an Array item using the index position
 
 let first = fruits[0]
 // Apple
 
 let last = fruits[fruits.length - 1]
 // Banana
-Loop over an Array
+//Loop over an Array
 
 fruits.forEach(function(item, index, array) {
   console.log(item, index)
 })
-// Apple 0
-// Banana 1
-Add an item to the end of an Array
+ Apple, 0
+ Banana, 1
 
+
+//Add an item to the end of an Array
 let newLength = fruits.push('Orange')
-// ["Apple", "Banana", "Orange"]
-Remove an item from the end of an Array
+["Apple", "Banana", "Orange"]
 
+
+//Remove an item from the end of an Array
 let last = fruits.pop() // remove Orange (from the end)
-// ["Apple", "Banana"]
-Remove an item from the beginning of an Array
+["Apple", "Banana"]
 
+//Remove an item from the beginning of an Array
 let first = fruits.shift() // remove Apple from the front
-// ["Banana"]
-Add an item to the beginning of an Array
+ ["Banana"]
+
+// Add an item to the beginning of an Array
 
 let newLength = fruits.unshift('Strawberry') // add to the front
-// ["Strawberry", "Banana"]
-Find the index of an item in the Array
+["Strawberry", "Banana"]
+
 
 fruits.push('Mango')
-// ["Strawberry", "Banana", "Mango"]
+["Strawberry", "Banana", "Mango"]
 
+//Find the index of an item in the Array
 let pos = fruits.indexOf('Banana')
-// 1
-Remove an item by index position
+1
+
+//Remove an item by index position
 
 let removedItem = fruits.splice(pos, 1) // this is how to remove an item
+["Strawberry", "Mango"]
 
-// ["Strawberry", "Mango"]
-Remove items from an index position
-
+//Remove items from an index position
 let vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot']
 console.log(vegetables)
 // ["Cabbage", "Turnip", "Radish", "Carrot"]
@@ -74,71 +78,83 @@ console.log(vegetables)
 
 console.log(removedItems)
 // ["Turnip", "Radish"]
-Copy an Array
+
+//Copy an Array
 
 let shallowCopy = fruits.slice() // this is how to make a copy
 // ["Strawberry", "Mango"]
-Accessing array elements
-JavaScript arrays are zero-indexed. The first element of an array is at index 0, and the last element is at the index value equal to the value of the array's length property minus 1.
 
-Using an invalid index number returns undefined.
+// Accessing array elements
+// JavaScript arrays are zero-indexed. The first element of an array is at index 0, and the last element is at the index value equal to the value of the array's length property minus 1.
+
+// Using an invalid index number returns undefined.
 
 let arr = ['this is the first element', 'this is the second element', 'this is the last element']
 console.log(arr[0])              // logs 'this is the first element'
 console.log(arr[1])              // logs 'this is the second element'
 console.log(arr[arr.length - 1]) // logs 'this is the last element'
-Array elements are object properties in the same way that toString is a property (to be specific, however, toString() is a method). Nevertheless, trying to access an element of an array as follows throws a syntax error because the property name is not valid:
+
+
+// Array elements are object properties in the same way that toString is a property (to be specific, however, toString() is a method). Nevertheless, trying to access an element of an array as follows throws a syntax error because the property name is not valid:
 
 console.log(arr.0) // a syntax error
-There is nothing special about JavaScript arrays and the properties that cause this. JavaScript properties that begin with a digit cannot be referenced with dot notation and must be accessed using bracket notation.
 
-For example, if you had an object with a property named 3d, it can only be referenced using bracket notation.
+// There is nothing special about JavaScript arrays and the properties that cause this. JavaScript properties that begin with a digit cannot be referenced with dot notation and must be accessed using bracket notation.
+
+// For example, if you had an object with a property named 3d, it can only be referenced using bracket notation.
 
 let years = [1950, 1960, 1970, 1980, 1990, 2000, 2010]
 console.log(years.0)   // a syntax error
 console.log(years[0])  // works properly
 renderer.3d.setTexture(model, 'character.png')     // a syntax error
 renderer['3d'].setTexture(model, 'character.png')  // works properly
-In the 3d example, '3d' had to be quoted (because it begins with a digit). But it's also possible to quote the array indexes as well (e.g., years['2'] instead of years[2]), although it's not necessary.
 
-The 2 in years[2] is coerced into a string by the JavaScript engine through an implicit toString conversion. As a result, '2' and '02' would refer to two different slots on the years object, and the following example could be true:
+// In the 3d example, '3d' had to be quoted (because it begins with a digit). But it's also possible to quote the array indexes as well (e.g., years['2'] instead of years[2]), although it's not necessary.
+
+// The 2 in years[2] is coerced into a string by the JavaScript engine through an implicit toString conversion. As a result, '2' and '02' would refer to two different slots on the years object, and the following example could be true:
 
 console.log(years['2'] != years['02'])
-Relationship between length and numerical properties
-A JavaScript array's length property and numerical properties are connected.
 
-Several of the built-in array methods (e.g., join(), slice(), indexOf(), etc.) take into account the value of an array's length property when they're called.
+// Relationship between length and numerical properties
+// A JavaScript array's length property and numerical properties are connected.
 
-Other methods (e.g., push(), splice(), etc.) also result in updates to an array's length property.
+// Several of the built-in array methods (e.g., join(), slice(), indexOf(), etc.) take into account the value of an array's length property when they're called.
+
+// Other methods (e.g., push(), splice(), etc.) also result in updates to an array's length property.
 
 const fruits = []
 fruits.push('banana', 'apple', 'peach')
 
 console.log(fruits.length) // 3
-When setting a property on a JavaScript array when the property is a valid array index and that index is outside the current bounds of the array, the engine will update the array's length property accordingly:
+
+// When setting a property on a JavaScript array when the property is a valid array index and that index is outside the current bounds of the array, the engine will update the array's length property accordingly:
 
 fruits[5] = 'mango'
 console.log(fruits[5])            // 'mango'
 console.log(Object.keys(fruits))  // ['0', '1', '2', '5']
 console.log(fruits.length)        // 6
-Increasing the length.
+
+//Increasing the length.
 
 fruits.length = 10
 console.log(fruits)              // ['banana', 'apple', 'peach', empty x 2, 'mango', empty x 4]
 console.log(Object.keys(fruits)) // ['0', '1', '2', '5']
 console.log(fruits.length)       // 10
 console.log(fruits[8])           // undefined
-Decreasing the length property does, however, delete elements.
+
+//Decreasing the length property does, however, delete elements.
 
 fruits.length = 2
 console.log(Object.keys(fruits)) // ['0', '1']
 console.log(fruits.length)       // 2
-This is explained further on the Array.length page.
 
-Creating an array using the result of a match
-The result of a match between a RegExp and a string can create a JavaScript array. This array has properties and elements which provide information about the match. Such an array is returned by RegExp.exec(), String.match(), and String.replace().
+// //This is explained further on the Array.length page.
 
-To help explain these properties and elements, see this example and then refer to the table below:
+// Creating an array using the result of a match
+
+// The result of a match between a RegExp and a string can create a JavaScript array. This array has properties and elements which provide information about the match. Such an array is returned by RegExp.exec(), String.match(), and String.replace().
+
+// To help explain these properties and elements, see this example and then refer to the table below:
 
 // Match one d followed by one or more b's followed by one d
 // Remember matched b's and the following d
@@ -146,12 +162,13 @@ To help explain these properties and elements, see this example and then refer t
 
 const myRe = /d(b+)(d)/i
 const myArray = myRe.exec('cdbBdbsbz')
-The properties and elements returned from this match are as follows:
 
-Property/Element	Description	Example
-input
-Read only	The original string against which the regular expression was matched.	"cdbBdbsbz"
-index
+// The properties and elements returned from this match are as follows:
+
+// Property/Element	Description	Example
+// input
+// Read only	The original string against which the regular expression was matched.	"cdbBdbsbz"
+// index
 Read only	The zero-based index of the match in the string.	1
 [0]
 Read only	The last matched characters.	"dbBd"

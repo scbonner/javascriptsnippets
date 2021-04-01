@@ -35,6 +35,9 @@ function fillDynamically(value, length) {
   return ['d', 'd', 'd'];
 }
 
+// Write a function fillDynamically(value, length). It should construct a new array of length filled with value
+
+
 //Sadric's answer
 function fillDynamically(value, length) {
     return new Array(length).fill(value)
