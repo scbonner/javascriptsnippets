@@ -60,18 +60,7 @@ function abc(arr) {
 function abc(num) {
     num[1] = 0
     return null
-} 
-
-function abc(num) {
-    num[1] = 0
-    return null
 }
-
-function abc(num) {
-    num[1] = 0
-    return null
-}
-
 
 function ff(num) {
     num[1] 0
@@ -83,7 +72,7 @@ function f(nums) {
     return null
 }
 
->
+
 const array = [0, 0, 0];
 f(array)=;
 Expected: null but got: undefined

@@ -98,7 +98,6 @@ Result:
 function fillDynamically(size) { 
   return new Array(size).fill('d');
 }
-
 fillDynamically(3);
 Result
 ['d', 'd', 'd']

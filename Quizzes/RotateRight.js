@@ -52,6 +52,8 @@ Expected: true OK!
 8 tests, 0 failures
 
 
+// Write a function that rotates an array. The last element moves to the beginning of the array. The function should modify the array itself.
+
 function rotate(x) {
  if (x.length == 0) {
   

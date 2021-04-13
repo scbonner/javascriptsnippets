@@ -5,16 +5,16 @@
 Result:
 false
 
-// ['a', 'b'].includes('c');
-// Result: 
-// false 
+['a', 'b'].includes('c');
+Result: 
+false 
 
 
-// ['a', 'b'].includes('a');
-// Result: 
-// true 
+['a', 'b'].includes('a');
+Result: 
+true 
 
-// //Some methods are mercifully simple to learn.
+//Some methods are mercifully simple to learn.
 
 
-// new Array(arrayLength).fill(0);
+new Array(arrayLength).fill(0);

@@ -52,8 +52,6 @@ function uniq(arr) {
 }
 // Write a function uniq(arr). It should return a new array without any duplicate values. It should not change the original array.
 
-
-
 //Show Author's Answer
 
 function uniq(arr) {

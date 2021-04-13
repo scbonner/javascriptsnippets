@@ -1,20 +1,20 @@
-Problem Explanation
-You have to go through each word and figure out which one is the longest and return the length of that word.
+// Problem Explanation
+// You have to go through each word and figure out which one is the longest and return the length of that word.
 
-Relevant Links
-JS String Length 2.6k
-Hints
-Hint 1
-You will need to loop through the words in the string.
+// Relevant Links
+// JS String Length 2.6k
+// Hints
+// Hint 1
+// You will need to loop through the words in the string.
 
-Hint 2
-You will need to figure out a way to keep track globally of the greatest current length.
+// Hint 2
+// You will need to figure out a way to keep track globally of the greatest current length.
 
-Hint 3
-Do you remember how to get the length of strings?
+// Hint 3
+// Do you remember how to get the length of strings?
 
-Solutions
-Solution 1 (Click to Show/Hide)
+// Solutions
+// Solution 1 (Click to Show/Hide)
 function findLongestWordLength(str) {
   let words = str.split(' ');
   let maxLength = 0;
@@ -27,14 +27,14 @@ function findLongestWordLength(str) {
 
   return maxLength;
 }
-Code Explanation
-Take the string and convert it into an array of words. Declare a variable to keep track of the maximum length and loop from 0 to the length of the array of words.
+// Code Explanation
+// Take the string and convert it into an array of words. Declare a variable to keep track of the maximum length and loop from 0 to the length of the array of words.
 
-Then check for the longest word by comparing the current word to the previous one and storing the new longest word. At the end of the loop just return the number value of the variable maxLength.
+// Then check for the longest word by comparing the current word to the previous one and storing the new longest word. At the end of the loop just return the number value of the variable maxLength.
 
-Relevant Links
-JS Array.length 594
-Solution 2 (Click to Show/Hide)
+// Relevant Links
+// JS Array.length 594
+// Solution 2 (Click to Show/Hide)
 Using .reduce()
 
 function findLongestWordLength(s) {
@@ -64,13 +64,13 @@ Let’s analyze everything inside the Math.max parenthesees to understand how we
 
 str.split(" ") splits the string into an array, taking spaces as separators. It returns this array: [“The”,"quick,“brown”,“fox”,“jumped”,“over”,“the”,“lazy”,“dog”].
 
-Then, we will make another array, made from the lengths of each element of the str.split(" ") array with map().
+// Then, we will make another array, made from the lengths of each element of the str.split(" ") array with map().
 
-str.split(" ").map(word => word.length) returns [3, 5, 5, 3, 6, 4, 3, 4, 3]
+// str.split(" ").map(word => word.length) returns [3, 5, 5, 3, 6, 4, 3, 4, 3]
 
-Finally, we pass the array as argument for the Math.max function with the spread operator ...
+// Finally, we pass the array as argument for the Math.max function with the spread operator ...
 
-For more information on map click here. 929
+// For more information on map click here. 929
 
 Solution 4 (Click to Show/Hide)
 function findLongestWordLength(str) {

@@ -95,14 +95,17 @@ const groupInfo = people.reduce((groups, person) => {
 }, {});
 
 console.log(groupInfo); // {A: 3, C: 1, B: 2}
-7. Retrieve a subset of an array based on particular criteria
+
+//7. Retrieve a subset of an array based on particular criteria
 const myArray = [{x:100}, {x:200}, {x:300}];
 
 const newArray = myArray.filter(element => element.x > 250);
 console.log(newArray); // [{x:300}] 
-Note: The filter() method creates a new array with all elements that pass the test implemented by the provided function.
 
-8. Sort an array
+//Note: The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+
+//8. Sort an array
+
 const people = [
   { name: "John", age: 21 },
   { name: "Peter", age: 31 },
@@ -115,9 +118,10 @@ let sortByAge = people.sort(function (p1, p2) {
 });
 
 console.log(sortByAge);
-enter image description here
 
-9. Find an element in an array
+//enter image description here
+
+//9. Find an element in an array
 const people = [ {name: "john", age:23},
                 {name: "john", age:43},
                 {name: "jim", age:101},
@@ -125,7 +129,7 @@ const people = [ {name: "john", age:23},
 
 const john = people.find(person => person.name === 'john');
 console.log(john);
-enter image description here
+//enter image description here
 
 // The Array.prototype.find() method returns the value of the first element in the array that satisfies the provided testing function.
 

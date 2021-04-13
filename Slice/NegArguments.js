@@ -49,18 +49,20 @@ Result:
 [10, 20] 
 
 
-This example means "slice from the second-to-last element to the end".
+//This example means "slice from the second-to-last element to the end".
 
-> 
+
 const nums = [10, 20, 30, 40, 50];
 nums.slice(nums.length - 2);
 Result: 
 [40, 50] 
-> 
+
+
 [10, 20, 30, 40, 50].slice(-2);
 Result: 
 [40, 50] 
-> 
+
+
 [10, 20].slice(-2);
 Result: 
 [10, 20] 
@@ -81,11 +83,12 @@ Result:
 
 // Both begin and end can be negative. Remember that the end element isn't included in the slice.
 
-> 
+
 [10, 20, 30].slice(-3, -1);
 Result: 
 [10, 20] 
-> 
+
+
 [10, 20, 30, 40, 50].slice(-3, -1);
 Result: 
 [30, 40] 
